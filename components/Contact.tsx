@@ -76,8 +76,8 @@ function Contact() {
     {
       icon: Phone,
       title: 'Teléfono',
-      content: '+58 414-1038147',
-      href: 'tel:+584141038147',
+      content: '+58 412-9050109',
+      href: 'tel:+584129050109',
     },
     {
       icon: MapPin,
