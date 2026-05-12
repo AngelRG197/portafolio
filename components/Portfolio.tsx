@@ -112,7 +112,7 @@ function Portfolio() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-400 bg-clip-text text-transparent px-4">
-            Portfolio Destacado
+            Portafolio Destacado
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
             Algunos de nuestros proyectos más recientes y exitosos
