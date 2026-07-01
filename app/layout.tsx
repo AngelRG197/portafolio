@@ -1,13 +1,10 @@
 import type { Metadata, Viewport } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-  title: 'ZyberPro - Soluciones Tecnológicas Profesionales',
-  description: 'ZyberPro ofrece servicios de desarrollo de software, consultoría tecnológica y soluciones innovadoras para tu negocio.',
-  keywords: 'desarrollo web, aplicaciones móviles, cloud computing, consultoría tecnológica, software a medida',
+  title: 'ZyberPro - Duo de Ingeniería & Desarrollo de Software B2B',
+  description: 'Portafolio y CV de Angel Riobueno (Frontend Dev & UI/UX) y Brayan González (Backend & DevOps). Soluciones de software a medida y desarrollo de sistemas B2B.',
+  keywords: 'desarrollo web, aplicaciones móviles, cloud computing, consultoría tecnológica, software a medida, ZyberPro, Angel Riobueno, Brayan Gonzalez',
   authors: [{ name: 'ZyberPro' }],
   creator: 'ZyberPro',
   publisher: 'ZyberPro',
@@ -29,8 +26,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_ES',
     url: 'https://zyberprooficial.vercel.app',
-    title: 'ZyberPro - Soluciones Tecnológicas Profesionales',
-    description: 'ZyberPro ofrece servicios de desarrollo de software, consultoría tecnológica y soluciones innovadoras para tu negocio.',
+    title: 'ZyberPro - Duo de Ingeniería & Desarrollo de Software B2B',
+    description: 'Portafolio y CV de Angel Riobueno (Frontend Dev & UI/UX) y Brayan González (Backend & DevOps). Soluciones de software a medida y desarrollo de sistemas B2B.',
     siteName: 'ZyberPro',
     images: [
       {
@@ -43,8 +40,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ZyberPro - Soluciones Tecnológicas Profesionales',
-    description: 'ZyberPro ofrece servicios de desarrollo de software, consultoría tecnológica y soluciones innovadoras para tu negocio.',
+    title: 'ZyberPro - Duo de Ingeniería & Desarrollo de Software B2B',
+    description: 'Portafolio y CV de Angel Riobueno (Frontend Dev & UI/UX) y Brayan González (Backend & DevOps). Soluciones de software a medida y desarrollo de sistemas B2B.',
     images: ['https://zyberprooficial.vercel.app/logo.png'],
   },
 }
@@ -63,8 +60,11 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="es" className="bg-black">
+    <html lang="es" className="bg-black scroll-smooth">
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/logo.png" type="image/png" />
         <link rel="apple-touch-icon" href="/logo.png" />
@@ -74,8 +74,9 @@ export default function RootLayout({
         <meta property="og:image:type" content="image/png" />
         <meta name="twitter:image" content="https://zyberprooficial.vercel.app/logo.png" />
       </head>
-      <body className={`${inter.className} bg-black text-white antialiased`}>{children}</body>
+      <body className="bg-black text-white antialiased" style={{ fontFamily: "'Inter', sans-serif" }}>
+        {children}
+      </body>
     </html>
   )
 }
-

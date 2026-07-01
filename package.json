@@ -11,6 +11,7 @@
     "tunnel:inspect": "start http://localhost:4040 && ngrok http 3000"
   },
   "dependencies": {
+    "@babel/runtime": "^8.0.0",
     "@emailjs/browser": "^4.4.1",
     "framer-motion": "^10.16.16",
     "lucide-react": "^0.303.0",

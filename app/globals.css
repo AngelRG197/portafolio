@@ -258,3 +258,41 @@ canvas {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* ── Marquee infinite scroll ── */
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-track {
+  animation: marquee 30s linear infinite;
+  width: max-content;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── CTA Animated Mesh Gradient ── */
+@keyframes mesh-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.cta-mesh-bg {
+  background: 
+    radial-gradient(ellipse at 0% 100%, rgba(0,229,255,0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, rgba(0,180,200,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(0,229,255,0.04) 0%, transparent 60%),
+    #030303;
+  background-size: 200% 200%;
+  animation: mesh-shift 8s ease infinite;
+}
+
+/* ── Cyberpunk button glow on hover ── */
+button:focus-visible {
+  outline: 2px solid rgba(0, 229, 255, 0.6);
+  outline-offset: 3px;
+}

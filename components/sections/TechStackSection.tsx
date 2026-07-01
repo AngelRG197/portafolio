@@ -1,0 +1,177 @@
+'use client'
+
+import { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Code2, Server, Layout, Database, Terminal, Cloud, ArrowRight } from 'lucide-react'
+
+const skillCategories = [
+  {
+    icon: Code2,
+    tag: '01 — FRONTEND DEVELOPMENT',
+    title: 'Desarrollo Frontend Premium',
+    shortDesc: 'Interfaces de usuario fluidas, animadas y de alto rendimiento.',
+    fullDesc: 'Especialista en construir SPA, SSR y aplicaciones estáticas optimizadas. Foco obsesivo en el rendimiento, la accesibilidad (a11y), y micro-interacciones interactivas de primer nivel.',
+    features: ['React.js / Next.js', 'TypeScript', 'TailwindCSS / SCSS', 'Framer Motion / GSAP'],
+    color: 'cyan',
+  },
+  {
+    icon: Server,
+    tag: '02 — BACKEND & APIS',
+    title: 'Arquitectura Backend',
+    shortDesc: 'Sistemas escalables, base de datos óptimas y APIs seguras.',
+    fullDesc: 'Desarrollo de microservicios, RESTful y GraphQL APIs bien estructurados. Diseño de bases de datos relacionales y no relacionales preparadas para soportar cargas pesadas de tráfico.',
+    features: ['Node.js / Express', 'Python (Django / FastAPI)', 'PostgreSQL / MongoDB / Redis', 'Diseño de APIs & Integraciones'],
+    color: 'violet',
+  },
+  {
+    icon: Layout,
+    tag: '03 — UI/UX DESIGN',
+    title: 'Diseño de Experiencia y UI',
+    shortDesc: 'Estructuración limpia, layouts premium y prototipado.',
+    fullDesc: 'Fusión de ingeniería y diseño. Creación de sistemas de diseño reutilizables, wireframes de alta fidelidad, pruebas de usabilidad y transiciones interactivas detalladas.',
+    features: ['Figma profesional', 'Creación de Design Systems', 'Prototipado Interactivo', 'Accesibilidad & Arquitectura de Información'],
+    color: 'emerald',
+  },
+  {
+    icon: Cloud,
+    tag: '04 — CLOUD & DEVOPS',
+    title: 'Despliegue & Infraestructura',
+    shortDesc: 'Automatización de deploys (CI/CD) y gestión cloud.',
+    fullDesc: 'Configuración de pipelines automatizados de integración y entrega continua. Aprovisionamiento de servidores, contenedores y hosting serverless de alta disponibilidad.',
+    features: ['Docker', 'AWS / Google Cloud / Vercel', 'GitHub Actions CI/CD', 'Linux & Bash Scripting'],
+    color: 'amber',
+  },
+  {
+    icon: Database,
+    tag: '05 — AUTOMATIZACIÓN & SCRIPTS',
+    title: 'Automatización & Herramientas',
+    shortDesc: 'Integración inteligente de flujos de trabajo.',
+    fullDesc: 'Creación de scripts personalizados para raspado de datos (web scraping), automatizaciones de procesos y conexiones entre APIs sin fricciones utilizando código o herramientas visuales avanzadas.',
+    features: ['Python Automation Scripts', 'Integración de APIs y Webhooks', 'Bases de datos en la nube', 'Automatizaciones custom'],
+    color: 'blue',
+  },
+  {
+    icon: Terminal,
+    tag: '06 — METODOLOGÍAS',
+    title: 'Liderazgo & Metodologías',
+    shortDesc: 'Gestión ágil de proyectos y desarrollo centrado en el código limpio.',
+    fullDesc: 'Aplicación de Clean Code, principios SOLID, GitFlow estricto y metodologías Scrum/Kanban para mantener el código legible y de fácil mantenimiento en equipos medianos y grandes.',
+    features: ['Git / GitHub (GitFlow)', 'Clean Code & SOLID', 'Metodologías Ágiles (Scrum)', 'QA / Jest Testing'],
+    color: 'pink',
+  },
+]
+
+const colorMap: Record<string, string> = {
+  cyan: 'text-cyan-400 bg-cyan-500/10 border-cyan-500/30 group-hover:border-cyan-400/60',
+  violet: 'text-violet-400 bg-violet-500/10 border-violet-500/30 group-hover:border-violet-400/60',
+  emerald: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30 group-hover:border-emerald-400/60',
+  amber: 'text-amber-400 bg-amber-500/10 border-amber-500/30 group-hover:border-amber-400/60',
+  blue: 'text-blue-400 bg-blue-500/10 border-blue-500/30 group-hover:border-blue-400/60',
+  pink: 'text-pink-400 bg-pink-500/10 border-pink-500/30 group-hover:border-pink-400/60',
+}
+
+export default function TechStackSection() {
+  const [expanded, setExpanded] = useState<number | null>(null)
+
+  return (
+    <section id="stack" className="py-24 bg-[#050505] relative overflow-hidden">
+      <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff04_1px,transparent_1px),linear-gradient(to_bottom,#ffffff04_1px,transparent_1px)] bg-[size:60px_60px]" />
+      
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Nuestro stack tecnológico</p>
+          <h2 className="text-4xl lg:text-6xl font-black text-white mb-4">
+            Habilidades & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Stack Tecnológico</span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Habilidades agrupadas por categorías. Haz clic en cualquiera para expandir el detalle técnico.
+          </p>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {skillCategories.map((svc, i) => {
+            const isOpen = expanded === i
+            const colors = colorMap[svc.color]
+
+            return (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.07 }}
+                onClick={() => setExpanded(isOpen ? null : i)}
+                className={`group cursor-pointer relative p-6 rounded-2xl bg-[#0a0a0a] border transition-all duration-500 overflow-hidden ${
+                  isOpen ? `border-${svc.color}-500/50` : 'border-white/5 hover:border-white/15'
+                }`}
+              >
+                {/* Animated gradient background on open */}
+                <AnimatePresence>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className={`absolute inset-0 bg-gradient-to-br from-${svc.color}-500/5 to-transparent`}
+                    />
+                  )}
+                </AnimatePresence>
+
+                <div className="relative z-10">
+                  {/* Header */}
+                  <div className="flex items-start justify-between gap-4">
+                    <div>
+                      <span className="text-xs font-mono text-gray-600 block mb-2">{svc.tag}</span>
+                      <div className={`w-10 h-10 rounded-lg flex items-center justify-center mb-4 border ${colors}`}>
+                        <svc.icon className={`w-5 h-5 text-${svc.color}-400`} />
+                      </div>
+                      <h3 className="text-lg font-bold text-white mb-2">{svc.title}</h3>
+                      <p className="text-sm text-gray-500">{svc.shortDesc}</p>
+                    </div>
+                    <motion.div
+                      animate={{ rotate: isOpen ? 90 : 0 }}
+                      transition={{ duration: 0.3 }}
+                      className="flex-shrink-0 mt-1"
+                    >
+                      <ArrowRight className="w-4 h-4 text-gray-600" />
+                    </motion.div>
+                  </div>
+
+                  {/* Expandable content */}
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.35, ease: 'easeInOut' }}
+                        className="overflow-hidden"
+                      >
+                        <div className="pt-5 mt-5 border-t border-white/5">
+                          <p className="text-sm text-gray-400 leading-relaxed mb-4">{svc.fullDesc}</p>
+                          <ul className="space-y-2">
+                            {svc.features.map((f, fi) => (
+                              <li key={fi} className="flex items-center gap-2 text-sm">
+                                <span className={`w-1.5 h-1.5 rounded-full bg-${svc.color}-400 flex-shrink-0`} />
+                                <span className="text-gray-300">{f}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              </motion.div>
+            )
+          })}
+        </div>
+      </div>
+    </section>
+  )
+}
