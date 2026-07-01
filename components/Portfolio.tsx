@@ -43,7 +43,7 @@ const projects: Project[] = [
   {
     title: 'Tierra Gourmet',
     description: 'Landing page moderna y atractiva para productos gourmet con diseño responsive y optimizada para conversiones',
-    image: '/tierra_gourmet.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/tierra_gourmet.png`,
     demoUrl: 'https://tierra-gourmet.vercel.app/',
     githubUrl: '#',
     codeLines: [
@@ -55,7 +55,7 @@ const projects: Project[] = [
   {
     title: 'AR Studio',
     description: 'Landing page innovadora para estudio de realidad aumentada con diseño moderno y experiencia inmersiva',
-    image: '/ar_studio.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/ar_studio.png`,
     demoUrl: 'https://arstudio-seven.vercel.app/',
     githubUrl: '#',
     codeLines: [
@@ -69,7 +69,7 @@ const projects: Project[] = [
   {
     title: 'Sistema CRM',
     description: 'Plataforma de gestión de relaciones con clientes para optimizar ventas y mejorar la atención al cliente',
-    image: '/crm.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/crm.png`,
     demoUrl: '#',
     githubUrl: '#',
     codeLines: [
@@ -83,7 +83,7 @@ const projects: Project[] = [
   {
     title: 'ContaPlus',
     description: 'Sistema contable y administrativo integral para gestión financiera, facturación y reportes empresariales',
-    image: '/contable.png',
+    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/contable.png`,
     demoUrl: '#',
     githubUrl: '#',
     codeLines: [
