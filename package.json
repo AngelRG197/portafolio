@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "tunnel": "ngrok http 3000",
-    "tunnel:inspect": "start http://localhost:4040 && ngrok http 3000"
+    "tunnel:inspect": "start http://localhost:4040 && ngrok http 3000",
+    "export": "next build"
   },
   "dependencies": {
     "@babel/runtime": "^8.0.0",
