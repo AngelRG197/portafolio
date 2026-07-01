@@ -2,7 +2,7 @@
 <html lang="es" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
   <title>Brayan González — Senior Backend & DevOps Engineer | CV</title>
   <!-- SEO Meta Tags -->
   <meta name="description" content="Curriculum profesional e interactivo de Brayan González, Senior Backend Developer & DevOps Engineer. Especialista en PHP, Laravel, PostgreSQL y Cloud Infrastructure.">
@@ -42,9 +42,34 @@
   <script src="https://unpkg.com/lucide@latest"></script>
   <!-- Custom Styles -->
   <style>
+    * {
+      box-sizing: border-box;
+    }
+    
     body {
       background-color: #050505;
       color: #f3f4f6;
+      overflow-x: hidden;
+      max-width: 100vw;
+    }
+    
+    /* Prevent horizontal overflow */
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+    
+    /* Ensure all containers are responsive */
+    img, video, iframe, embed, object {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    /* Make sure text doesn't overflow */
+    p, h1, h2, h3, h4, h5, h6, span, div {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
     }
     
     /* Subtle grid background mapping the ZyberPro site */
