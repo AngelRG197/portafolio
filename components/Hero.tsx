@@ -109,13 +109,10 @@ function Hero() {
           className="mb-3 sm:mb-4 md:mb-6"
         >
           <div className="relative w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 mx-auto mb-2 sm:mb-3 animate-pulse-glow">
-            <Image
-              src="/logo.png"
+            <img
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`}
               alt="ZyberPro Logo"
-              fill
-              className="object-contain drop-shadow-[0_0_20px_rgba(0,229,255,0.5)]"
-              priority
-              sizes="(max-width: 475px) 56px, (max-width: 640px) 80px, (max-width: 768px) 96px, (max-width: 1024px) 112px, 128px"
+              className="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(0,229,255,0.5)]"
             />
           </div>
         </motion.div>

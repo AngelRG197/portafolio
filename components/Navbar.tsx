@@ -42,12 +42,10 @@ export default function Navbar() {
             {/* Logo area */}
             <a href="#inicio" className="flex items-center gap-2 sm:gap-3 group z-50">
               <div className="relative w-7 h-7 sm:w-8 sm:h-8 flex-shrink-0">
-                <Image
-                  src="/logo.png"
+                <img
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`}
                   alt="Ángel García Logo"
-                  fill
-                  className="object-contain group-hover:rotate-12 transition-transform duration-300"
-                  priority
+                  className="w-full h-full object-contain group-hover:rotate-12 transition-transform duration-300"
                 />
               </div>
               <div className="flex flex-col">
