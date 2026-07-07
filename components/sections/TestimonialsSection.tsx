@@ -8,13 +8,13 @@ const testimonials = [
   {
     name: 'Carlos Mendoza',
     role: 'CEO, Distribuidora Andina',
-    text: 'ZyberPro no solo entregó el sistema, entregó exactamente el impacto que prometieron. Recuperamos la inversión en el primer mes.',
+    text: 'Angel no solo entregó el sistema, entregó exactamente el impacto que prometió. Recuperamos la inversión en el primer mes.',
     rating: 5,
   },
   {
     name: 'Ana Berríos',
     role: 'Directora de Ops, TechLogistics',
-    text: 'Probamos 3 agencias antes. Ninguna entendía realmente nuestros procesos. ZyberPro llegó, diagnosticó y ejecutó sin excusas.',
+    text: 'Probamos 3 agencias antes. Ninguna entendía realmente nuestros procesos. Angel llegó, diagnosticó y ejecutó sin excusas.',
     rating: 5,
   },
   {
@@ -37,8 +37,8 @@ const testimonials = [
   },
   {
     name: 'Patricia Gómez',
-    role: 'Dir. Comercial, B2B Solutions',
-    text: 'Transparency total. Precios fijos, cronogramas reales, demos bi-semanales. Nunca me dejaron en la oscuridad.',
+    role: 'Dir. Comercial, Software Solutions',
+    text: 'Transparencia total. Precios fijos, cronogramas reales, demos bi-semanales. Nunca me dejaron en la oscuridad.',
     rating: 5,
   },
 ]

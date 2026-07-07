@@ -8,33 +8,33 @@ const history = [
   {
     icon: Briefcase,
     number: '01',
-    title: 'Senior Frontend & Backend Developers',
-    subtitle: 'ZyberPro // 2023 - Presente',
-    desc: 'Lideramos el diseño e implementación de sistemas ERP, CRM y administrativos a medida para clientes B2B de logística, salud y comercio. Redujimos los tiempos de respuesta y carga un 45% y migramos sistemas legacy a arquitecturas modernas y escalables.',
-    output: 'Liderazgo técnico + Stack Moderno',
+    title: 'Full Stack Developer',
+    subtitle: 'Proyectos Independientes // 2021 - Presente',
+    desc: 'Diseño e implementación de sistemas ERP, CRM y aplicaciones web completas para clientes de logística, salud y comercio. Desarrollo tanto del frontend como del backend, optimizando rendimiento y migrando sistemas legacy a arquitecturas modernas.',
+    output: 'Stack Completo + Arquitectura Escalable',
   },
   {
     icon: Code2,
     number: '02',
-    title: 'Full Stack Web Developers',
-    subtitle: 'Consultora de Software B2B // 2021 - 2023',
-    desc: 'Desarrollamos aplicaciones robustas, SaaS personalizados e integraciones backend usando PHP puro, Laravel y Node.js. Automatizamos pipelines de CI/CD utilizando GitHub Actions para agilizar el ciclo de despliegue.',
-    output: 'Desarrollo de APIs e Integraciones',
+    title: 'Desarrollador Web Full Stack',
+    subtitle: 'Consultora de Software // 2020 - 2021',
+    desc: 'Desarrollo de aplicaciones web robustas usando PHP, Laravel, React y Node.js. Implementación de APIs REST, integración de servicios externos y automatización de despliegues con CI/CD.',
+    output: 'APIs & Integraciones',
   },
   {
-    icon: Briefcase,
+    icon: Code2,
     number: '03',
-    title: 'Frontend Developers & UI Designers',
-    subtitle: 'Freelance & Agencias Locales // 2019 - 2021',
-    desc: 'Construimos interfaces personalizadas, portales dinámicos y herramientas de gestión empresarial. Diseñamos con Bootstrap y CSS nativo exclusivo, logrando una armonía perfecta entre diseño estético y código interactivo rápido.',
-    output: 'Prototipado rápido + Animaciones CSS',
+    title: 'Frontend Developer',
+    subtitle: 'Freelance & Proyectos Locales // 2019 - 2020',
+    desc: 'Construcción de interfaces modernas y responsivas con React, Angular y Vue.js. Diseño de componentes reutilizables, optimización de rendimiento y animaciones CSS avanzadas.',
+    output: 'UI/UX + Componentes React',
   },
   {
     icon: GraduationCap,
     number: '04',
-    title: 'Ingeniería / Formación Tecnológica',
+    title: 'Formación Tecnológica',
     subtitle: 'Educación & Certificaciones // 2018 - 2022',
-    desc: 'Formación profesional en ingeniería de sistemas y ciencias de la computación. Certificaciones avanzadas en bases de datos relacionales PostgreSQL, patrones de diseño de software y metodologías ágiles.',
+    desc: 'Formación profesional en ingeniería de sistemas y desarrollo de software. Certificaciones en bases de datos PostgreSQL, patrones de diseño, metodologías ágiles y arquitectura cloud.',
     output: 'Especialización Continua',
   },
 ]
@@ -54,13 +54,13 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="text-center mb-20"
         >
-          <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Nuestra experiencia</p>
+          <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Mi experiencia</p>
           <h2 className="text-4xl lg:text-6xl font-black text-white mb-4">
-            Historial &<br />
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Experiencia Laboral</span>
+            Trayectoria &<br />
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Experiencia Profesional</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-xl mx-auto">
-            Nuestra trayectoria combinada está enfocada en resolver problemas reales con código eficiente y diseño de alto nivel.
+            Mi trayectoria está enfocada en resolver problemas reales con código eficiente y arquitecturas escalables.
           </p>
         </motion.div>
 

@@ -2,12 +2,12 @@ import type { Metadata, Viewport } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'ZyberPro - Duo de Ingeniería & Desarrollo de Software B2B',
-  description: 'Portafolio y CV de Angel Riobueno (Frontend Dev & UI/UX) y Brayan González (Backend & DevOps). Soluciones de software a medida y desarrollo de sistemas B2B.',
-  keywords: 'desarrollo web, aplicaciones móviles, cloud computing, consultoría tecnológica, software a medida, ZyberPro, Angel Riobueno, Brayan Gonzalez',
-  authors: [{ name: 'ZyberPro' }],
-  creator: 'ZyberPro',
-  publisher: 'ZyberPro',
+  title: 'Angel Riobueno - Full Stack Developer',
+  description: 'Portafolio y CV de Angel Riobueno - Desarrollador Full Stack especializado en Frontend (React, Angular), Backend (PHP, Node.js, Python) y DevOps. Soluciones de software completas y escalables.',
+  keywords: 'desarrollo web, full stack developer, frontend, backend, devops, react, angular, php, laravel, node.js, python, typescript, cloud computing, aws, docker, Angel Riobueno',
+  authors: [{ name: 'Angel Riobueno' }],
+  creator: 'Angel Riobueno',
+  publisher: 'Angel Riobueno',
   formatDetection: {
     email: false,
     address: false,
@@ -26,22 +26,22 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'es_ES',
     url: 'https://zyberprooficial.vercel.app',
-    title: 'ZyberPro - Duo de Ingeniería & Desarrollo de Software B2B',
-    description: 'Portafolio y CV de Angel Riobueno (Frontend Dev & UI/UX) y Brayan González (Backend & DevOps). Soluciones de software a medida y desarrollo de sistemas B2B.',
-    siteName: 'ZyberPro',
+    title: 'Angel Riobueno - Full Stack Developer',
+    description: 'Portafolio y CV de Angel Riobueno - Desarrollador Full Stack con experiencia en Frontend, Backend y DevOps. Soluciones de software completas desde la interfaz hasta la infraestructura.',
+    siteName: 'Angel Riobueno Portfolio',
     images: [
       {
         url: 'https://zyberprooficial.vercel.app/logo.png',
         width: 512,
         height: 512,
-        alt: 'ZyberPro Logo',
+        alt: 'Angel Riobueno Logo',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'ZyberPro - Duo de Ingeniería & Desarrollo de Software B2B',
-    description: 'Portafolio y CV de Angel Riobueno (Frontend Dev & UI/UX) y Brayan González (Backend & DevOps). Soluciones de software a medida y desarrollo de sistemas B2B.',
+    title: 'Angel Riobueno - Full Stack Developer',
+    description: 'Portafolio y CV de Angel Riobueno - Desarrollador Full Stack con experiencia en Frontend, Backend y DevOps. Soluciones de software completas desde la interfaz hasta la infraestructura.',
     images: ['https://zyberprooficial.vercel.app/logo.png'],
   },
 }

@@ -12,7 +12,7 @@ import StatsSection from '@/components/sections/StatsSection'
 import CTASection from '@/components/sections/CTASection'
 
 /* ─────────────────────────────────────────────
-   DUO PORTFOLIO HERO SECTION
+   HERO SECTION - ANGEL RIOBUENO
 ───────────────────────────────────────────── */
 function HeroSection() {
   return (
@@ -38,18 +38,18 @@ function HeroSection() {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/10 text-emerald-400 text-[10px] font-mono mb-8 border border-emerald-500/20 tracking-wider"
             >
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-              DISPONIBLES PARA PROYECTOS // LIVE STATUS
+              DISPONIBLE PARA PROYECTOS // OPEN TO WORK
             </motion.span>
 
             <h1 className="text-5xl lg:text-7xl font-black text-white leading-[0.95] tracking-tight mb-8">
-              Angel & Brayan<br />
+              Angel Riobueno<br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-600">
-                Duo de Ingeniería B2B.
+                Full Stack Developer
               </span>
             </h1>
 
             <p className="text-lg text-gray-400 leading-relaxed mb-10 max-w-lg">
-              Desarrollador Frontend + Ingeniero Backend/DevOps trabajando en conjunto. Diseñamos, construimos e implementamos sistemas a medida sin intermediarios ni burocracia de agencia.
+              Desarrollador Full Stack especializado en Frontend, Backend y DevOps. Diseño, construyo e implemento sistemas completos a medida, desde la interfaz hasta la infraestructura en la nube.
             </p>
 
             <div className="flex flex-col sm:flex-row items-start gap-4">
@@ -104,7 +104,7 @@ function HeroSection() {
                   <div className="w-3 h-3 rounded-full bg-yellow-500/70" />
                   <div className="w-3 h-3 rounded-full bg-green-500/70" />
                 </div>
-                <span className="text-xs text-gray-600">engineering-duo.json</span>
+                <span className="text-xs text-gray-600">angel-dev-profile.json</span>
                 <Terminal className="w-3.5 h-3.5 text-gray-600" />
               </div>
 
@@ -112,29 +112,35 @@ function HeroSection() {
               <div className="text-xs space-y-1.5 overflow-x-auto text-gray-400">
                 <p className="text-gray-500">{`{`}</p>
                 <p className="pl-4">
-                  <span className="text-cyan-400">"teamName"</span>: <span className="text-amber-300">"ZyberPro Technical Duo"</span>,
+                  <span className="text-cyan-400">"developer"</span>: <span className="text-amber-300">"Angel Riobueno"</span>,
                 </p>
                 <p className="pl-4">
-                  <span className="text-cyan-400">"engineers"</span>: <span className="text-gray-300">{`[`}</span>
+                  <span className="text-cyan-400">"role"</span>: <span className="text-emerald-400">"Full Stack Developer"</span>,
+                </p>
+                <p className="pl-4">
+                  <span className="text-cyan-400">"skills"</span>: <span className="text-gray-300">{`[`}</span>
                 </p>
                 <p className="pl-8 text-gray-300">
-                  {`{ `}<span className="text-cyan-400">"name"</span>: <span className="text-amber-300">"Angel RG"</span>, <span className="text-cyan-400">"role"</span>: <span className="text-emerald-400">"Frontend & UI/UX"</span>{` },`}
+                  <span className="text-emerald-400">"Frontend (React, Next.js, Angular, TypeScript)"</span>,
                 </p>
                 <p className="pl-8 text-gray-300">
-                  {`{ `}<span className="text-cyan-400">"name"</span>: <span className="text-amber-300">"Brayan GT"</span>, <span className="text-cyan-400">"role"</span>: <span className="text-emerald-400">"Backend & DevOps"</span>{` }`}
+                  <span className="text-emerald-400">"Backend (PHP, Laravel, Node.js, Python)"</span>,
+                </p>
+                <p className="pl-8 text-gray-300">
+                  <span className="text-emerald-400">"DevOps (Docker, AWS, CI/CD)"</span>,
+                </p>
+                <p className="pl-8 text-gray-300">
+                  <span className="text-emerald-400">"Databases (PostgreSQL, MySQL, MongoDB)"</span>
                 </p>
                 <p className="pl-4 text-gray-300">{`],`}</p>
                 <p className="pl-4">
-                  <span className="text-cyan-400">"focus"</span>: <span className="text-amber-300">"Sistemas ERP, CRMs, Dashboards y Apps de Campo"</span>,
+                  <span className="text-cyan-400">"focus"</span>: <span className="text-amber-300">"Sistemas ERP, CRMs, Dashboards y Apps Web"</span>,
                 </p>
                 <p className="pl-4">
-                  <span className="text-cyan-400">"methodology"</span>: <span className="text-amber-300">"Sprints quincenales, demos en vivo, sin intermediarios"</span>,
+                  <span className="text-cyan-400">"methodology"</span>: <span className="text-amber-300">"Desarrollo ágil, código limpio, arquitectura escalable"</span>,
                 </p>
                 <p className="pl-4">
-                  <span className="text-cyan-400">"codebaseQuality"</span>: <span className="text-emerald-400">"Clean Code, TypeScript estricto, 100% testeable"</span>,
-                </p>
-                <p className="pl-4">
-                  <span className="text-cyan-400">"philosophy"</span>: <span className="text-amber-300">"Bypass de agencias infladas. Ingeniería de alta velocidad directa al cliente."</span>
+                  <span className="text-cyan-400">"philosophy"</span>: <span className="text-amber-300">"Full Stack de principio a fin. Soluciones completas y eficientes."</span>
                 </p>
                 <p className="text-gray-500">{`}`}</p>
               </div>
@@ -160,8 +166,8 @@ function HeroSection() {
                 <Users className="w-4 h-4 text-cyan-400" />
               </div>
               <div>
-                <div className="text-[10px] text-gray-500">Formato</div>
-                <div className="text-xs font-black text-white">Duo Técnico Ágil</div>
+                <div className="text-[10px] text-gray-500">Especialidad</div>
+                <div className="text-xs font-black text-white">Full Stack Dev</div>
               </div>
             </motion.div>
           </motion.div>
@@ -183,7 +189,6 @@ export default function Home() {
       <TechStackSection />
       <ExperienceSection />
       <PortfolioSection />
-      <TeamSection />
       <CTASection />
       <Footer />
     </main>

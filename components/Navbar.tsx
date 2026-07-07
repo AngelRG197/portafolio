@@ -18,7 +18,7 @@ export default function Navbar() {
   }, [])
 
   const navItems = [
-    { name: 'Nosotros', href: '#nosotros' },
+    { name: 'Sobre mí', href: '#nosotros' },
     { name: 'Stack', href: '#stack' },
     { name: 'Experiencia', href: '#experiencia' },
     { name: 'Proyectos', href: '#proyectos' },
@@ -50,9 +50,9 @@ export default function Navbar() {
               </div>
               <div className="flex flex-col">
                 <span className="text-lg sm:text-2xl font-black tracking-wider bg-gradient-to-r from-white via-cyan-200 to-cyan-400 bg-clip-text text-transparent">
-                  ZYBERPRO
+                  ANGEL RIOBUENO
                 </span>
-                <span className="text-[10px] sm:text-xs font-mono text-cyan-500/80 tracking-widest -mt-0.5 hidden sm:block">// DEV & DESIGN DUO</span>
+                <span className="text-[10px] sm:text-xs font-mono text-cyan-500/80 tracking-widest -mt-0.5 hidden sm:block">// FULL STACK DEV</span>
               </div>
             </a>
 
@@ -113,7 +113,7 @@ export default function Navbar() {
               <div className="flex justify-center mb-8">
                 <div className="flex items-center gap-2">
                   <Cpu className="w-6 h-6 text-cyan-400" />
-                  <span className="text-xl font-black text-white tracking-widest">ZYBERPRO</span>
+                  <span className="text-xl font-black text-white tracking-widest">ANGEL RIOBUENO</span>
                 </div>
               </div>
 
@@ -133,7 +133,7 @@ export default function Navbar() {
               <div className="pt-8 border-t border-white/5 space-y-4">
                 <div className="flex items-center justify-center gap-2 text-xs font-mono text-cyan-500">
                   <Terminal className="w-4 h-4" />
-                  <span>// HECHO PARA CONSTRUIR E INNOVAR</span>
+                  <span>// FULL STACK DEVELOPER</span>
                 </div>
                 
                 <a

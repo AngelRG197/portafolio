@@ -1,6 +1,6 @@
-# ZyberPro - Sitio Web Profesional
+# Angel Riobueno - Portafolio Profesional
 
-Sitio web moderno y dinámico para ZyberPro, desarrollado con las tecnologías más avanzadas del mercado.
+Portafolio personal moderno y dinámico de Angel Riobueno, Full Stack Developer, desarrollado con las tecnologías más avanzadas del mercado.
 
 ## 🚀 Tecnologías Utilizadas
 
@@ -47,7 +47,7 @@ npm start
 ## 📁 Estructura del Proyecto
 
 ```
-zyberpro/
+angel-riobueno-portfolio/
 ├── app/
 │   ├── layout.tsx          # Layout principal
 │   ├── page.tsx             # Página de inicio
@@ -133,9 +133,9 @@ Para exponer tu aplicación localmente a internet usando ngrok:
 
 ## 📄 Licencia
 
-© 2024 ZyberPro. Todos los derechos reservados.
+© 2024 Angel Riobueno. Todos los derechos reservados.
 
 ---
 
-Desarrollado con ❤️ por ZyberPro
+Desarrollado con ❤️ por Angel Riobueno
 

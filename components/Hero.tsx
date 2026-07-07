@@ -41,9 +41,9 @@ function Hero() {
   }, [stats])
 
   const codeLines = useMemo(() => [
-    'const innovation = new ZyberPro();',
-    'innovation.build(future);',
-    'innovation.deploy(success);',
+    'const developer = new AngelRiobueno();',
+    'developer.build(innovation);',
+    'developer.deploy(success);',
   ], [])
 
   return (
@@ -111,7 +111,7 @@ function Hero() {
           <div className="relative w-14 h-14 xs:w-16 xs:h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 mx-auto mb-2 sm:mb-3 animate-pulse-glow">
             <img
               src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`}
-              alt="ZyberPro Logo"
+              alt="Angel Riobueno Logo"
               className="w-full h-full object-contain drop-shadow-[0_0_20px_rgba(0,229,255,0.5)]"
             />
           </div>
@@ -147,7 +147,7 @@ function Hero() {
             <span className="block shimmer-text text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">Futuro Digital</span>
             <span className="block text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-2 sm:mt-3">
               <span className="bg-gradient-to-r from-cyan-400 via-cyan-300 to-cyan-500 bg-clip-text text-transparent">
-                ZyberPro
+                Angel Riobueno
               </span>
             </span>
           </h1>

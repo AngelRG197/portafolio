@@ -1,8 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Github, ExternalLink, Cpu, Terminal, CheckCircle2 } from 'lucide-react'
+import { Github, ExternalLink, Cpu, Terminal, CheckCircle2, ChevronLeft, ChevronRight } from 'lucide-react'
 import Image from 'next/image'
+import { useState } from 'react'
 
 const projects = [
   {
@@ -18,9 +19,50 @@ const projects = [
     year: '2024',
     github: '#',
     live: '#',
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/crm.png`,
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/crm.png`],
     gradient: 'from-cyan-500/10 to-transparent',
     icon: Cpu,
+  },
+  {
+    title: 'SICAP - Sistema Integral de Capacitación y Aprendizaje Profesional',
+    tag: 'EdTech / LMS',
+    desc: 'Plataforma completa de gestión de capacitaciones dirigida al sector público venezolano, con gestión académica, biblioteca digital, certificación profesional y sistema avanzado de auditoría.',
+    impact: [
+      'Arquitectura full-stack moderna con Laravel 12 (backend API REST), React 18 + TypeScript (frontend SPA) y PostgreSQL con schemas seguros para datos sensibles médicos encriptados.',
+      'Sistema académico integral que incluye gestión de cursos con programaciones multi-modalidad, matriculación con flujo de aprobación, evaluaciones automáticas y generación de certificados digitales con competencias profesionales.',
+      'Implementación de seguridad enterprise-grade con Laravel Sanctum para autenticación, Spatie Permission para roles jerárquicos, Activity Log para auditoría completa, y sistema de notificaciones en tiempo real con colas asíncronas.'
+    ],
+    techs: ['Laravel 12', 'React 18', 'TypeScript', 'PostgreSQL', 'TailwindCSS', 'Vite'],
+    year: '2026',
+    github: '#',
+    live: '#',
+    images: [
+      `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Inicio_sesion.png`,
+      `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Panel_administrativo.png`,
+      `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/Panel_participante.png`
+    ],
+    gradient: 'from-blue-500/10 to-transparent',
+    icon: Terminal,
+  },
+  {
+    title: 'Sistema de Atención y Gestión de Emergencias',
+    tag: 'Sistemas Críticos',
+    desc: 'Plataforma integral de gestión operativa en tiempo real para la coordinación de atención de emergencias, con interfaz de reporte ciudadano, control de unidades de respuesta, roles de usuario y generación automática de informes críticos.',
+    impact: [
+      'Interfaz de reporte ciudadano con formulario multi-paso intuitivo, permitiendo a usuarios reportar emergencias por categoría (desastres naturales, salud, incendios, incidentes, rescate) con seguimiento en tiempo real del estatus.',
+      'Arquitectura backend robusta construida con PHP puro orientado a objetos, garantizando alta disponibilidad y respuesta inmediata bajo condiciones críticas.',
+      'Sistema de autenticación multinivel con control de roles y permisos granulares para operadores, supervisores y administradores, con panel de alertas activas, gestión de vehículos y estadísticas operativas en tiempo real mediante JavaScript nativo.'
+    ],
+    techs: ['PHP Puro (POO)', 'JavaScript (ES6)', 'MySQL', 'Bootstrap', 'CSS Personalizado'],
+    year: '2025',
+    github: '#',
+    live: '#',
+    images: [
+      `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/gestion_emergencia.png`,
+      `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/reporte_emergencia.png`
+    ],
+    gradient: 'from-red-500/10 to-transparent',
+    icon: Terminal,
   },
   {
     title: 'SaaS de Gestión Contable, Administrativa y Presupuestaria',
@@ -35,11 +77,78 @@ const projects = [
     year: '2024',
     github: '#',
     live: '#',
-    image: `${process.env.NEXT_PUBLIC_BASE_PATH || ''}/contable.png`,
+    images: [`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/contable.png`],
     gradient: 'from-violet-500/10 to-transparent',
-    icon: Terminal,
+    icon: Cpu,
   },
 ]
+
+function ImageCarousel({ images }: { images: string[] }) {
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  const nextImage = () => {
+    setCurrentIndex((prev) => (prev + 1) % images.length)
+  }
+
+  const prevImage = () => {
+    setCurrentIndex((prev) => (prev - 1 + images.length) % images.length)
+  }
+
+  if (images.length === 1) {
+    return (
+      <div className="relative w-full h-48 rounded-xl overflow-hidden border border-white/10 bg-[#111]">
+        <Image
+          src={images[0]}
+          alt="Project screenshot"
+          fill
+          className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, 50vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
+      </div>
+    )
+  }
+
+  return (
+    <div className="relative w-full h-48 rounded-xl overflow-hidden border border-white/10 bg-[#111] group/carousel">
+      <Image
+        src={images[currentIndex]}
+        alt={`Project screenshot ${currentIndex + 1}`}
+        fill
+        className="object-cover object-top transition-all duration-500"
+        sizes="(max-width: 768px) 100vw, 50vw"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
+      
+      {/* Navigation buttons */}
+      <button
+        onClick={prevImage}
+        className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 border border-white/20 flex items-center justify-center text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity hover:bg-black/80"
+      >
+        <ChevronLeft className="w-5 h-5" />
+      </button>
+      <button
+        onClick={nextImage}
+        className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-black/60 border border-white/20 flex items-center justify-center text-white opacity-0 group-hover/carousel:opacity-100 transition-opacity hover:bg-black/80"
+      >
+        <ChevronRight className="w-5 h-5" />
+      </button>
+      
+      {/* Dots indicator */}
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5">
+        {images.map((_, idx) => (
+          <button
+            key={idx}
+            onClick={() => setCurrentIndex(idx)}
+            className={`w-1.5 h-1.5 rounded-full transition-all ${
+              idx === currentIndex ? 'bg-cyan-400 w-4' : 'bg-white/40'
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 
 export default function PortfolioSection() {
   return (
@@ -56,14 +165,14 @@ export default function PortfolioSection() {
           <div>
             <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Proyectos reales</p>
             <h2 className="text-4xl lg:text-6xl font-black text-white">
-              Nuestros <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">desarrollos.</span>
+              Mis <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">desarrollos.</span>
             </h2>
           </div>
           <p className="text-gray-400 max-w-sm">Los sistemas principales que hemos desarrollado en conjunto, optimizados para impacto operativo real.</p>
         </motion.div>
 
-        {/* 2-column balanced layout */}
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        {/* 2x2 grid for 4 projects */}
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((item, i) => (
             <motion.div
               key={i}
@@ -85,15 +194,8 @@ export default function PortfolioSection() {
                   </div>
 
                   {/* Project Image */}
-                  <div className="relative w-full h-48 rounded-xl overflow-hidden mb-5 border border-white/10 bg-[#111]">
-                    <Image
-                      src={item.image}
-                      alt={item.title}
-                      fill
-                      className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-transparent to-transparent" />
+                  <div className="mb-5">
+                    <ImageCarousel images={item.images} />
                   </div>
                   
                   <div className="flex items-center gap-3 mb-3">

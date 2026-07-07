@@ -79,7 +79,7 @@ export default function ProblemSection() {
             className="lg:pb-2"
           >
             <p className="text-lg text-gray-400 leading-relaxed border-l-2 border-red-500/40 pl-6">
-              La mayoría de empresas B2B en crecimiento pierden entre el <strong className="text-white">20% y el 35% de su margen</strong> en ineficiencias invisibles. No es mala suerte, es tecnología mal implementada.
+              La mayoría de empresas en crecimiento pierden entre el <strong className="text-white">20% y el 35% de su margen</strong> en ineficiencias invisibles. No es mala suerte, es tecnología mal implementada.
             </p>
           </motion.div>
         </div>

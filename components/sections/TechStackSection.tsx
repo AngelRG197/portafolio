@@ -10,53 +10,53 @@ const skillCategories = [
     tag: '01 — FRONTEND DEVELOPMENT',
     title: 'Desarrollo Frontend Premium',
     shortDesc: 'Interfaces de usuario fluidas, animadas y de alto rendimiento.',
-    fullDesc: 'Especialista en construir SPA, SSR y aplicaciones estáticas optimizadas. Foco obsesivo en el rendimiento, la accesibilidad (a11y), y micro-interacciones interactivas de primer nivel.',
-    features: ['React.js / Next.js', 'TypeScript', 'TailwindCSS / SCSS', 'Framer Motion / GSAP'],
+    fullDesc: 'Especialista en construir SPA, SSR y aplicaciones estáticas optimizadas. Foco en rendimiento, accesibilidad (a11y), y micro-interacciones interactivas de primer nivel.',
+    features: ['React.js / Next.js / Angular', 'TypeScript / JavaScript', 'TailwindCSS / Bootstrap / SCSS', 'Framer Motion / GSAP'],
     color: 'cyan',
   },
   {
     icon: Server,
     tag: '02 — BACKEND & APIS',
     title: 'Arquitectura Backend',
-    shortDesc: 'Sistemas escalables, base de datos óptimas y APIs seguras.',
-    fullDesc: 'Desarrollo de microservicios, RESTful y GraphQL APIs bien estructurados. Diseño de bases de datos relacionales y no relacionales preparadas para soportar cargas pesadas de tráfico.',
-    features: ['Node.js / Express', 'Python (Django / FastAPI)', 'PostgreSQL / MongoDB / Redis', 'Diseño de APIs & Integraciones'],
+    shortDesc: 'Sistemas escalables, APIs robustas y optimización de bases de datos.',
+    fullDesc: 'Desarrollo de microservicios, RESTful y GraphQL APIs. Diseño de bases de datos relacionales y no relacionales preparadas para soportar cargas pesadas de tráfico.',
+    features: ['PHP / Laravel', 'Node.js / Express', 'Python (Django / FastAPI)', 'Go / C++ / C#'],
     color: 'violet',
   },
   {
-    icon: Layout,
-    tag: '03 — UI/UX DESIGN',
-    title: 'Diseño de Experiencia y UI',
-    shortDesc: 'Estructuración limpia, layouts premium y prototipado.',
-    fullDesc: 'Fusión de ingeniería y diseño. Creación de sistemas de diseño reutilizables, wireframes de alta fidelidad, pruebas de usabilidad y transiciones interactivas detalladas.',
-    features: ['Figma profesional', 'Creación de Design Systems', 'Prototipado Interactivo', 'Accesibilidad & Arquitectura de Información'],
+    icon: Database,
+    tag: '03 — DATABASES',
+    title: 'Bases de Datos & Optimización',
+    shortDesc: 'Diseño, optimización y gestión de datos eficiente.',
+    fullDesc: 'Experiencia en bases de datos relacionales y NoSQL. Optimización de consultas, diseño de esquemas escalables y gestión de datos en la nube.',
+    features: ['PostgreSQL / MySQL', 'MongoDB / Redis', 'Diseño de Esquemas', 'Optimización de Queries'],
     color: 'emerald',
   },
   {
     icon: Cloud,
     tag: '04 — CLOUD & DEVOPS',
-    title: 'Despliegue & Infraestructura',
-    shortDesc: 'Automatización de deploys (CI/CD) y gestión cloud.',
+    title: 'Infraestructura & DevOps',
+    shortDesc: 'Automatización de deploys (CI/CD) y gestión cloud completa.',
     fullDesc: 'Configuración de pipelines automatizados de integración y entrega continua. Aprovisionamiento de servidores, contenedores y hosting serverless de alta disponibilidad.',
-    features: ['Docker', 'AWS / Google Cloud / Vercel', 'GitHub Actions CI/CD', 'Linux & Bash Scripting'],
+    features: ['Docker / Kubernetes', 'AWS / Google Cloud / Azure', 'GitHub Actions / Jenkins CI/CD', 'Linux / Bash Scripting'],
     color: 'amber',
   },
   {
-    icon: Database,
-    tag: '05 — AUTOMATIZACIÓN & SCRIPTS',
-    title: 'Automatización & Herramientas',
-    shortDesc: 'Integración inteligente de flujos de trabajo.',
-    fullDesc: 'Creación de scripts personalizados para raspado de datos (web scraping), automatizaciones de procesos y conexiones entre APIs sin fricciones utilizando código o herramientas visuales avanzadas.',
-    features: ['Python Automation Scripts', 'Integración de APIs y Webhooks', 'Bases de datos en la nube', 'Automatizaciones custom'],
+    icon: Layout,
+    tag: '05 — UI/UX DESIGN',
+    title: 'Diseño de Experiencia y UI',
+    shortDesc: 'Estructuración limpia, layouts premium y prototipado.',
+    fullDesc: 'Fusión de ingeniería y diseño. Creación de sistemas de diseño reutilizables, wireframes de alta fidelidad, pruebas de usabilidad y transiciones interactivas detalladas.',
+    features: ['Figma profesional', 'Creación de Design Systems', 'Prototipado Interactivo', 'Accesibilidad & UX Research'],
     color: 'blue',
   },
   {
     icon: Terminal,
-    tag: '06 — METODOLOGÍAS',
-    title: 'Liderazgo & Metodologías',
-    shortDesc: 'Gestión ágil de proyectos y desarrollo centrado en el código limpio.',
-    fullDesc: 'Aplicación de Clean Code, principios SOLID, GitFlow estricto y metodologías Scrum/Kanban para mantener el código legible y de fácil mantenimiento en equipos medianos y grandes.',
-    features: ['Git / GitHub (GitFlow)', 'Clean Code & SOLID', 'Metodologías Ágiles (Scrum)', 'QA / Jest Testing'],
+    tag: '06 — METODOLOGÍAS & CALIDAD',
+    title: 'Metodologías & Clean Code',
+    shortDesc: 'Desarrollo ágil, código limpio y mejores prácticas.',
+    fullDesc: 'Aplicación de Clean Code, principios SOLID, GitFlow estricto y metodologías Scrum/Kanban para mantener el código legible y de fácil mantenimiento en proyectos de cualquier escala.',
+    features: ['Git / GitHub (GitFlow)', 'Clean Code & SOLID', 'Metodologías Ágiles (Scrum)', 'Testing (Jest / PHPUnit)'],
     color: 'pink',
   },
 ]
@@ -84,12 +84,12 @@ export default function TechStackSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Nuestro stack tecnológico</p>
+          <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Stack tecnológico completo</p>
           <h2 className="text-4xl lg:text-6xl font-black text-white mb-4">
-            Habilidades & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Stack Tecnológico</span>
+            Habilidades & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-600">Tecnologías</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Habilidades agrupadas por categorías. Haz clic en cualquiera para expandir el detalle técnico.
+            Full Stack Developer con experiencia en Frontend, Backend, Bases de Datos y DevOps. Haz clic en cualquier categoría para ver el detalle técnico.
           </p>
         </motion.div>
 

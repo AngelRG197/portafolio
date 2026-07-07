@@ -39,16 +39,16 @@ export default function Footer() {
               <div className="relative w-8 h-8 flex-shrink-0">
                 <img
                   src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logo.png`}
-                  alt="ZyberPro Logo"
+                  alt="Angel Riobueno Logo"
                   className="w-full h-full object-contain"
                 />
               </div>
               <span className="text-xl sm:text-2xl font-black bg-gradient-to-r from-white via-cyan-200 to-cyan-400 bg-clip-text text-transparent tracking-widest">
-                ZYBERPRO
+                ANGEL RIOBUENO
               </span>
             </div>
             <p className="text-sm text-gray-500 mb-6 max-w-sm leading-relaxed">
-              Duo de ingeniería enfocado en el desarrollo de software a medida, SaaS y sistemas administrativos optimizados para alto rendimiento empresarial.
+              Desarrollador Full Stack especializado en crear soluciones web completas, desde interfaces modernas hasta arquitecturas backend escalables y sistemas optimizados.
             </p>
             
             {/* Social icons */}
@@ -78,7 +78,7 @@ export default function Footer() {
             <h3 className="text-white font-mono text-xs uppercase tracking-widest mb-4">// Menú</h3>
             <ul className="space-y-2.5">
               {[
-                { name: 'Nosotros', href: '#nosotros' },
+                { name: 'Sobre mí', href: '#nosotros' },
                 { name: 'Stack', href: '#stack' },
                 { name: 'Experiencia', href: '#experiencia' },
                 { name: 'Proyectos', href: '#proyectos' },
@@ -100,10 +100,10 @@ export default function Footer() {
             <h3 className="text-white font-mono text-xs uppercase tracking-widest mb-4">// Especialidades</h3>
             <ul className="space-y-2.5">
               {[
-                'Arquitectura SaaS',
-                'Desarrollo Frontend',
-                'Bases de Datos SQL/NoSQL',
-                'Automatizaciones & APIs',
+                'Full Stack Development',
+                'Frontend (React/Angular)',
+                'Backend (PHP/Node/Python)',
+                'DevOps & Cloud (AWS)',
               ].map((spec, index) => (
                 <li key={index} className="text-sm text-gray-500 font-mono">
                   {spec}
@@ -114,19 +114,19 @@ export default function Footer() {
 
           {/* Column 4: Status / Info */}
           <div>
-            <h3 className="text-white font-mono text-xs uppercase tracking-widest mb-4">// Estado del Dúo</h3>
+            <h3 className="text-white font-mono text-xs uppercase tracking-widest mb-4">// Estado</h3>
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-xs text-emerald-400 font-mono">
                 <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                Disponibilidad inmediata
+                Disponible para proyectos
               </li>
               <li className="flex items-center gap-2 text-xs text-gray-500 font-mono">
                 <Globe className="w-3.5 h-3.5" />
-                Remoto a nivel mundial
+                Trabajo remoto
               </li>
               <li className="flex items-center gap-2 text-xs text-gray-500 font-mono">
                 <Terminal className="w-3.5 h-3.5" />
-                Código 100% a medida
+                Código de calidad
               </li>
             </ul>
           </div>
@@ -136,10 +136,10 @@ export default function Footer() {
         {/* Footer bottom bar */}
         <div className="border-t border-white/5 pt-8 mt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-gray-600 font-mono">
-            © {currentYear} ZYBERPRO. Todos los derechos reservados.
+            © {currentYear} ANGEL RIOBUENO. Todos los derechos reservados.
           </p>
           <div className="flex gap-4">
-            <span className="text-[10px] text-gray-700 font-mono">// CONSTRUIDO CON PASIÓN POR EL DÚO</span>
+            <span className="text-[10px] text-gray-700 font-mono">// CONSTRUIDO CON PASIÓN Y DEDICACIÓN</span>
           </div>
         </div>
       </div>

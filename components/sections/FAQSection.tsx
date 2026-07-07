@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     q: '¿Tienen experiencia en mi industria?',
-    a: 'Hemos trabajado con empresas de logística, distribución, salud, construcción, retail B2B, importación y servicios profesionales. Cada proyecto comienza con un diagnóstico profundo de tu industria específica, no con plantillas genéricas.',
+    a: 'He trabajado con empresas de logística, distribución, salud, construcción, retail, importación y servicios profesionales. Cada proyecto comienza con un análisis profundo de tu industria específica, no con plantillas genéricas.',
   },
   {
     q: '¿Cómo calculan el precio de un proyecto?',

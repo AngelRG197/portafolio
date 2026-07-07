@@ -4,10 +4,10 @@ import { useEffect, useRef, useState } from 'react'
 import { motion, useInView } from 'framer-motion'
 
 const stats = [
-  { value: 7, suffix: '+', label: 'Lenguajes & Frameworks', desc: 'Dominio de stack backend (PHP, Go, Node) y frontend' },
-  { value: 25, suffix: '+', label: 'Sistemas Entregados', desc: 'ERPs, CRMs y plataformas SaaS a medida finalizados con éxito' },
+  { value: 10, suffix: '+', label: 'Tecnologías Dominadas', desc: 'Frontend, Backend, DevOps, Bases de Datos y Cloud' },
+  { value: 5, suffix: '+', label: 'Proyectos Completados', desc: 'ERPs, CRMs y plataformas web completas entregadas con éxito' },
   { value: 99, suffix: '%', label: 'Optimización de Carga', desc: 'Puntuación promedio en Lighthouse y rendimiento web' },
-  { value: 5, suffix: '+ Años', label: 'Trabajo en Conjunto', desc: 'Duo consolidado ofreciendo soluciones de ingeniería' },
+  { value: 3, suffix: '+ Años', label: 'Experiencia Full Stack', desc: 'Desarrollo profesional en todo el stack tecnológico' },
 ]
 
 function Counter({ target, suffix }: { target: number; suffix: string }) {
@@ -46,8 +46,8 @@ export default function StatsSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Métricas de Ingeniería</p>
-          <h2 className="text-4xl lg:text-5xl font-black text-white">Nuestra trayectoria en números.</h2>
+          <p className="text-sm font-mono text-cyan-400 tracking-[0.3em] uppercase mb-3">// Métricas profesionales</p>
+          <h2 className="text-4xl lg:text-5xl font-black text-white">Mi trayectoria en números.</h2>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

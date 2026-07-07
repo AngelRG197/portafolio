@@ -70,19 +70,19 @@ function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      content: 'zyberprooficial@gmail.com',
-      href: 'mailto:zyberprooficial@gmail.com',
+      content: 'angeldavidriobueno@gmail.com',
+      href: 'mailto:angeldavidriobueno@gmail.com',
     },
     {
       icon: Phone,
       title: 'Teléfono',
-      content: '+58 412-9050109',
-      href: 'tel:+584129050109',
+      content: '+58 424-1519915',
+      href: 'tel:+584241519915',
     },
     {
       icon: MapPin,
       title: 'Ubicación',
-      content: 'Caracas, Venezuela',
+      content: 'Venezuela - Remoto y Presencial',
       href: '#',
     },
   ], [])
@@ -227,6 +227,16 @@ function Contact() {
               <span>{isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}</span>
               {!isSubmitting && <Send className="w-4 h-4 sm:w-5 sm:h-5" />}
             </motion.button>
+
+            <div className="text-center">
+              <p className="text-xs sm:text-sm text-gray-400 mb-2">O escríbeme directamente:</p>
+              <a
+                href="mailto:angeldavidriobueno@gmail.com?subject=Consulta desde el portafolio&body=Hola Angel,%0D%0A%0D%0A"
+                className="text-cyan-400 hover:text-cyan-300 text-sm sm:text-base font-medium underline transition-colors"
+              >
+                angeldavidriobueno@gmail.com
+              </a>
+            </div>
           </motion.form>
         </div>
       </div>

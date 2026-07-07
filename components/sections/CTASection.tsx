@@ -28,13 +28,13 @@ export default function CTASection() {
           </h2>
 
           <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Actualmente estamos abiertos a proyectos a medida o integrarnos a equipos de alto rendimiento.
+            Actualmente estoy disponible para proyectos Full Stack o para integrarme a equipos de alto rendimiento.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col items-center justify-center gap-6">
             <motion.a
-              href="mailto:tu-email@gmail.com" // ← Edita tu correo aquí
+              href="mailto:angeldavidriobueno@gmail.com"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               className="group relative w-full sm:w-auto px-12 py-5 bg-cyan-500 text-black font-black text-lg overflow-hidden block text-center"
@@ -48,35 +48,19 @@ export default function CTASection() {
               </span>
             </motion.a>
 
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 w-full sm:w-auto">
-              <motion.a
-                href="Curriculum_angel/index.html"
-                target="_blank"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="group w-full sm:w-auto px-6 py-4 bg-transparent text-white font-bold text-sm border border-white/20 hover:border-cyan-400/40 rounded-none transition-all duration-300 block text-center"
-                style={{ clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))' }}
-              >
-                <span className="flex items-center justify-center gap-2">
-                  <FileText className="w-4 h-4 text-cyan-400" />
-                  Descargar CV - Ángel
-                </span>
-              </motion.a>
-
-              <motion.a
-                href="Curriculum_brayan/index.html"
-                target="_blank"
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.97 }}
-                className="group w-full sm:w-auto px-6 py-4 bg-transparent text-white font-bold text-sm border border-white/20 hover:border-cyan-400/40 rounded-none transition-all duration-300 block text-center"
-                style={{ clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))' }}
-              >
-                <span className="flex items-center justify-center gap-2">
-                  <FileText className="w-4 h-4 text-cyan-400" />
-                  Descargar CV - Brayan
-                </span>
-              </motion.a>
-            </div>
+            <motion.a
+              href="Curriculum_angel/index.html"
+              target="_blank"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.97 }}
+              className="group w-full sm:w-auto px-8 py-4 bg-transparent text-white font-bold text-sm border border-white/20 hover:border-cyan-400/40 rounded-none transition-all duration-300 block text-center"
+              style={{ clipPath: 'polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px))' }}
+            >
+              <span className="flex items-center justify-center gap-2">
+                <FileText className="w-4 h-4 text-cyan-400" />
+                Ver mi CV / Currículum
+              </span>
+            </motion.a>
           </div>
 
           {/* Social Links */}
@@ -90,7 +74,7 @@ export default function CTASection() {
             <span className="text-gray-700">|</span>
             <div className="flex items-center gap-2 text-sm text-gray-500">
               <span className="w-1.5 h-1.5 rounded-full bg-cyan-500" />
-              Disponible para reubicación o remoto
+              Disponible para trabajo remoto y presencial
             </div>
           </div>
         </motion.div>

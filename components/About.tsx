@@ -51,9 +51,8 @@ function About() {
             Sobre Nosotros
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4">
-            En ZyberPro, somos un equipo de desarrolladores apasionados por la
-            tecnología y comprometidos con la excelencia. Transformamos ideas
-            complejas en soluciones elegantes y funcionales.
+            Soy Angel Riobueno, desarrollador Full Stack apasionado por la tecnología y comprometido con la excelencia. 
+            Transformo ideas complejas en soluciones digitales elegantes, funcionales y escalables, manejando todo el stack tecnológico.
           </p>
         </motion.div>
 
@@ -90,11 +89,11 @@ function About() {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nuestra Misión</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Mi Misión</h3>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Proporcionar soluciones tecnológicas de clase mundial que
-              impulsen la innovación y el crecimiento de nuestros clientes,
-              utilizando las mejores prácticas y tecnologías de vanguardia.
+              Proporcionar soluciones tecnológicas Full Stack de clase mundial que
+              impulsen la innovación y el crecimiento de mis clientes,
+              utilizando las mejores prácticas y tecnologías de vanguardia en Frontend, Backend y DevOps.
             </p>
           </motion.div>
 
@@ -105,11 +104,11 @@ function About() {
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Nuestra Visión</h3>
+            <h3 className="text-xl sm:text-2xl font-bold text-white mb-3 sm:mb-4">Mi Visión</h3>
             <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-              Ser reconocidos como líderes en el desarrollo de software y
-              consultoría tecnológica, siendo el socio preferido para empresas
-              que buscan transformación digital y excelencia técnica.
+              Ser reconocido como desarrollador Full Stack líder en desarrollo de software
+              y consultoría tecnológica, siendo el socio preferido para empresas
+              que buscan transformación digital, arquitecturas escalables y excelencia técnica.
             </p>
           </motion.div>
         </div>
